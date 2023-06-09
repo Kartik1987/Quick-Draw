@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+
+    <title>Quick Draw</title>
+  </head>
+  <body>
+    <h1><strong>Quick Draw</strong></h1>
+    <p>
+      Draw the object that is given at the bottom correctly before your time
+      runs out! Press the play button to get a random object! Then press the
+      clock button to start your time. Once finished, press the results button
+      to get your feedback. Finally, press the eraser if you need a different
+      object! Have fun!
+    </p>
+
+    <div>
+      <input
+        type="image"
+        src="img/play.png"
+        class="play"
+        name="play"
+        id="btn"
+      />
+    </div>
+    <div id="timer" class="red">Start</div>
+
+    <div>
+      <input
+        type="image"
+        src="img/clock.png"
+        class="clock"
+        name="clock"
+        id="clockbtn"
+      />
+    </div>
+
+    <div>
+      <input
+        type="image"
+        src="img/results.png"
+        class="results"
+        name="results"
+        id="btn2"
+      />
+    </div>
+    <!-- <button onclick="startCount()">Start count!</button>
+    <input type="text" id="demo" />
+    <button onclick="stopCount()">Stop count!</button> -->
+
+    <div>
+      <input
+        type="image"
+        src="img/eraser.png"
+        class="eraser"
+        name="eraser"
+        id="icon-undo"
+      />
+    </div>
+    <p><span id="output"></span></p>
+    <p id="status"></p>
+    <canvas id="myCanvas"></canvas>
+  </body>
+</html>

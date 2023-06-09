@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #timer {
+        font-size: 36px;
+        color: black;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="timer">15</div>
+
+    <script>
+      const timerElement = document.getElementById("timer");
+
+      function startCountdown() {
+        let time = 15;
+
+        const countdown = setInterval(() => {
+          timerElement.textContent = time;
+
+          if (time === 0) {
+            clearInterval(countdown);
+            timerElement.classList.add("red");
+          }
+
+          time--;
+        }, 1000);
+      }
+      startCountdown();
+    </script>
+  </body>
+</html>

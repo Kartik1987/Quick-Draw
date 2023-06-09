@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+
+  background-color: goldenrod;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+canvas {
+  border: 1px solid grey;
+  background-color: aliceblue;
+  border: 10px;
+  align-items: center;
+}
+.eraser {
+  width: 50px;
+  height: 50px;
+}
+.play {
+  width: 50px;
+  height: 50px;
+}
+.results {
+  width: 50px;
+  height: 50px;
+}
+
+/* .red {
+  color: red;
+} */
+
+#timer {
+  font-size: 36px;
+  color: red;
+  color: green;
+}
+.clock {
+  width: 50px;
+  height: 50px;
+}
